@@ -57,11 +57,10 @@ TKI sends money
 ## 🔗 Testnet Smart Contract ID
 
 ```
-Contract ID: YOUR_CONTRACT_ID_HERE
+Contract ID: CADBFT7FHH5YW65XBW4HSMWOOPYYKWN5YAQNNMF7URM3D4KOLGCPBDJH
 Network: Stellar Testnet
 ```
 
-> Replace `YOUR_CONTRACT_ID_HERE` with your actual contract ID after deploying via Soroban Studio.
 
 ---
 
