@@ -1,10 +1,11 @@
-[package]
-name = "tki-remittance"
-version = "0.1.0"
-edition = "2021"
+[workspace]
+resolver = "2"
+members = [
+  "contracts/*",
+]
 
-[lib]
-crate-type = ["cdylib"]
+[workspace.dependencies]
+soroban-sdk = "25"
 
 [profile.release]
 opt-level = "z"
@@ -16,8 +17,7 @@ panic = "abort"
 codegen-units = 1
 lto = true
 
-[dependencies]
-soroban-sdk = "21.0.0"
-
-[dev-dependencies]
-soroban-sdk = { version = "21.0.0", features = ["testutils"] }
+# For more information about this profile see https://soroban.stellar.org/docs/basic-tutorials/logging#cargotoml-profile
+[profile.release-with-logs]
+inherits = "release"
+debug-assertions = true
